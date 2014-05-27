@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>A453/01: Task 2</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">A453 Programming Project</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">The Tasks<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="task1.html">Task 1</a></li>
+                <li class="active"><a href="task2.html">Task 2</a></li>
+                <li><a href="task3.html">Task 3</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="design.html">Design / Planning</a></li>
+                <li><a href="implementation.html">Implementation</a></li>
+                <li><a href="evaluation.html">Testing &amp; Evaluation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teacher Resources<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="A453_TickSheet.pdf">A453 Tick Sheet (from mrfrasier.org)</a></li>
+                <li><a href="teach_yourself.html">Teach Yourself Python</a></li>
+                <li><a href="http://www.codecademy.com">Codecademy</a></li>
+                <li><a href="http://www.computingatschool.org.uk/">Computing at School</a></li>
+                <li><a href="http://www.cambridgegcsecomputing.org/">OCR Computing MOOC</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a>OCR</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="row featurette">
+            <h2 class="featurette heading">Creating Some Characters.<br /><span class="text-muted">Do you have the strength and skill for Task 2?</span></h2>
+            <p class="lead">Your task is to create a program that will calculate the characteristics of two characters' attributes. The only two characteristics you need to calculate are Strength and Skill.</p>
+            <p>Both characters have strength and skill set at 10 by default. A 12-sided dice and a four-sided dice are rolled. You then divide the result of the 12 sided dice by the result of the four sided dice, and round down. This number is then added to the initial value. This will happen four times in total(CharA Strength, CharA Skill, CharB Strength, CharB Skill). Finally, save these results into a file.</p>
+            <p>Please note that for the purposes of simplicity, <strong>this website does not store the values that are generated</strong>.</p>
+        </div>
+      </div>
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2>Scripted OR GUI (Both will result in a similar output)</h2>
+          <p><a class="btn btn-lg btn-primary" id="script_click" role="button">Click to Begin...</a></p>
+          <p class="scripted_output"></p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <footer>
+        <p>&copy; <a href="https://twitter.com/biddly_bear">Biddly Bear</a>. Tasks taken from the OCR 2014 Specification. Please visit me on <a href="https://twitter.com/biddly_bear">Twitter</a>, or head over to my <a href="https://medium.com/@biddly_bear">blog</a> for rambling and more.</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$(\'#p\').o(5(){$(".2").q();j()});5 f(e,h){i 9.g(9.r()*(h-e+1))+e}5 3(){i 9.g(f(1,s)/f(1,4))}5 j(){b=3();a=3();c=3();d=3();$(".2").7("8 m k: 0 + "+b+" = "+(b+0)+"<6 />");$(".2").7("8 m l: 0 + "+a+" = "+(a+0)+"<6 />");$(".2").7("8 n k: 0 + "+c+" = "+(c+0)+"<6 />");$(".2").7("8 n l: 0 + "+d+" = "+(d+0)+"<6 />")}',29,29,'10||scripted_output|createModifier||function|br|append|Character|Math|mod_a_ski|mod_a_str|mod_b_str|mod_b_ski|min|getRandomInt|floor|max|return|createCharacters|Strength|Skill|A|B|click|script_click|empty|random|12'.split('|'),0,{}))
+    </script>
+  </body>
+</html>
